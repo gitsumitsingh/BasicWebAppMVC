@@ -1,4 +1,4 @@
-namespace BasicWebApp.Models
+namespace BasicWebCore.Models
 {
     public class ErrorViewModel
     {
