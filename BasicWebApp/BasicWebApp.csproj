@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>MVC_Proj1</RootNamespace>
+    <RootNamespace>BasicWebApp</RootNamespace>
   </PropertyGroup>
 
 </Project>
