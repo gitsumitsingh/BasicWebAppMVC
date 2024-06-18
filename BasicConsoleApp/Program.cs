@@ -99,6 +99,12 @@ class Program
         #endregion
 
         #region LazySingleton
+        ////LazySingleton
+        //Parallel.Invoke(
+        //    () => PrintLazyStudentdetails(),
+        //    () => PrintLazyEmployeeDetails()
+        //    );
+        //Console.ReadLine();
 
         #endregion
 
@@ -111,6 +117,7 @@ class Program
     }
 
 
+    #region SingletonThreadSafe
     private static void PrintEmployeeDetails()
     {
         /*
@@ -130,6 +137,30 @@ class Program
         SingletonThreadSafe fromStudent = SingletonThreadSafe.GetInstance;
         fromStudent.PrintDetails("From Student");
     }
+    #endregion
+
+
+    #region LazySingleton
+    private static void PrintLazyEmployeeDetails()
+    {
+        /*
+         * Assuming LazySingleton is created from employee class
+         * we refer to the GetInstance property from the LazySingleton class
+         */
+        LazySingleton fromEmployee = LazySingleton.GetInstance;
+        fromEmployee.PrintDetails("From Employee");
+    }
+
+    private static void PrintLazyStudentdetails()
+    {
+        /*
+        * Assuming LazySingleton is created from student class
+        * we refer to the GetInstance property from the LazySingleton class
+        */
+        LazySingleton fromStudent = LazySingleton.GetInstance;
+        fromStudent.PrintDetails("From Student");
+    }
+    #endregion
 
 }
 
@@ -137,7 +168,13 @@ class Program
 /*
  * You can run the project in terminal by right clicking Solution Explorer => Open in Terminal
  * To check dot net version in cmd run
-dotnet --version
+dotnet --version      // Display .NET Core SDK version.
+
+dotnet --info          //Display .NET Core information.
+
+dotnet --list-runtimes   // Display the installed runtimes.
+
+dotnet --list-sdks       // Display the installed SDKs.
 
 –to create a console application
 dotnet new console
