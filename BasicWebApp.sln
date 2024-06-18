@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicConsoleApp", "BasicCon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicClassLibrary", "BasicClassLibrary\BasicClassLibrary.csproj", "{F598C890-EED5-4C8E-8B4E-5A58F6CA8D24}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebCore", "BasicWebApp\BasicWebCore.csproj", "{3405B547-825D-445B-8CEF-B83C39E60A79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebCore", "BasicWebCore\BasicWebCore.csproj", "{9E53878C-3EA1-4250-8491-B4BBEFDE008B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{F598C890-EED5-4C8E-8B4E-5A58F6CA8D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F598C890-EED5-4C8E-8B4E-5A58F6CA8D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F598C890-EED5-4C8E-8B4E-5A58F6CA8D24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3405B547-825D-445B-8CEF-B83C39E60A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3405B547-825D-445B-8CEF-B83C39E60A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3405B547-825D-445B-8CEF-B83C39E60A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3405B547-825D-445B-8CEF-B83C39E60A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E53878C-3EA1-4250-8491-B4BBEFDE008B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E53878C-3EA1-4250-8491-B4BBEFDE008B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E53878C-3EA1-4250-8491-B4BBEFDE008B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E53878C-3EA1-4250-8491-B4BBEFDE008B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
