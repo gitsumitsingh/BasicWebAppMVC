@@ -11,6 +11,7 @@ class Program
 {
     static void Main()
     {
+        #region Dictionary & Deligate Action method
         ////Dictionary & Deligate Action method
         //Console.WriteLine("Please Enter type, name, age & grade like below Eg.");
         //Console.WriteLine("Create John 28 5");
@@ -21,8 +22,9 @@ class Program
         //{
         //    studentSystem.ParseCommand(input);
         //}
+        #endregion
 
-
+        #region Abstraction Real World Example
         ////Abstraction Real World Example
         //SavingsAccount johnsSavings = new SavingsAccount("SA123456", "John Doe");
         //johnsSavings.Deposit(1000);
@@ -33,8 +35,9 @@ class Program
         //janesCurrent.Deposit(500);
         //janesCurrent.Withdraw(1000);
         //janesCurrent.DisplayBalance();
+        #endregion
 
-
+        #region Extension Method
         ////Extension Method
         //MathThirdParty obj = new MathThirdParty();
         //Console.WriteLine(obj.Add(20, 10));
@@ -47,8 +50,9 @@ class Program
         //obj.M4(); //Extension Method
         //obj.M5("Method Name: M5"); //Extension Method
         ////Console.WriteLine(obj.M1);
+        #endregion
 
-
+        #region Simple Singleton
         ///*
         // * Assuming Singleton is created from employee class
         // * we refer to the GetInstance property from the Singleton class
@@ -61,8 +65,9 @@ class Program
         // */
         //Singleton fromStudent = Singleton.GetInstance;
         //fromStudent.PrintDetails("From Student");
+        #endregion
 
-
+        #region SingletonWithoutSealed
         ///*
         //  * Assuming SingletonWithoutSealed is created from student class
         //  * we refer to the GetInstance property from the SingletonWithoutSealed class
@@ -82,16 +87,20 @@ class Program
         // */
         //SingletonWithoutSealed.DerivedSingletonWithoutSealed derivedObj = new SingletonWithoutSealed.DerivedSingletonWithoutSealed();
         //derivedObj.PrintDetails("From Derived");
+        #endregion
 
-
+        #region SingletonThreadSafe
         ////SingletonThreadSafe
         //Parallel.Invoke(
         //    () => PrintStudentdetails(),
         //    () => PrintEmployeeDetails()
         //    );
         //Console.ReadLine();
+        #endregion
 
+        #region LazySingleton
 
+        #endregion
 
 
 
@@ -139,10 +148,11 @@ dotnet run
 
  */
 
-/// <summary>
-/// you can write static void Main() line outside the Program class also like below and comment class Program
-/* https://github.com/SonicTheCat/CSharp-OOP-Basics/blob/master/03.Working%20With%20Abstraction%20-%20Lab/03.StudentSystem/StudentSystem.cs
- * Console.WriteLine("Please Enter type, name, age & grade like below Eg.");
+
+/*
+you can write static void Main() line outside the Program class also like below and comment class Program
+https://github.com/SonicTheCat/CSharp-OOP-Basics/blob/master/03.Working%20With%20Abstraction%20-%20Lab/03.StudentSystem/StudentSystem.cs
+Console.WriteLine("Please Enter type, name, age & grade like below Eg.");
 Console.WriteLine("Create Raj 28 5");
 Console.WriteLine("Show Raj");
 StudentSystem studentSystem = new StudentSystem();
@@ -153,4 +163,8 @@ while ((input = Console.ReadLine()) != "Exit")
     studentSystem.ParseCommand(input);
 }
 */
-/// </summary>
+
+/*
+ Shortcuts
+ Collapse All: ctrl+M+A
+ */

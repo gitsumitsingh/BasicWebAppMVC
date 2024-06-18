@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC Proj1", "MVC Proj1\MVC Proj1.csproj", "{49EF94EF-00AE-46AD-B535-E37700E59CE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApp", "MVC Proj1\BasicWebApp.csproj", "{49EF94EF-00AE-46AD-B535-E37700E59CE3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicConsoleApp", "BasicConsoleApp\BasicConsoleApp.csproj", "{C1653F72-19BA-4147-94B3-008D20B4E495}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicClassLibrary", "BasicClassLibrary\BasicClassLibrary.csproj", "{F598C890-EED5-4C8E-8B4E-5A58F6CA8D24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicClassLibrary", "BasicClassLibrary\BasicClassLibrary.csproj", "{F598C890-EED5-4C8E-8B4E-5A58F6CA8D24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BasicConsoleApp.DesignPattern._1Creational
-{/*
+{
+    /*
      *  Sealed restricts the inheritance
      */
     public sealed class SingletonThreadSafe
