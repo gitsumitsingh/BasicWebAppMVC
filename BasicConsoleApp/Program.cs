@@ -18,7 +18,7 @@ class Program
         //Console.WriteLine("Show John");
         //StudentSystem studentSystem = new StudentSystem();
         //string input;
-        //while ((input = Console.ReadLine()) != "Exit")
+        //while ((input = Console.ReadLine()).ToLower() != "exit")
         //{
         //    studentSystem.ParseCommand(input);
         //}
@@ -98,7 +98,7 @@ class Program
         //Console.ReadLine();
         #endregion
 
-        #region LazySingleton
+        #region SingletonLazy
         ////LazySingleton
         //Parallel.Invoke(
         //    () => PrintLazyStudentdetails(),

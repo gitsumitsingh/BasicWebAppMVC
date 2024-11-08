@@ -14,11 +14,11 @@ public class StudentSystem
     {
         var splitArgs = args.Split();
 
-        if (splitArgs[0] == "Create")
+        if (splitArgs[0].ToLower() == "create")
         {
             CreateStudent(splitArgs);
         }
-        else if (splitArgs[0] == "Show")
+        else if (splitArgs[0].ToLower() == "show")
         {
             ShowStudent(splitArgs, Console.WriteLine);
         }
