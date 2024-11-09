@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicConsoleApp.WrapperMaths
+namespace BasicConsoleApp.ExtensionMethod1
 {
     public static class SomeMoreMaths
     {

@@ -2,7 +2,7 @@
 
 using BasicClassLibrary;
 using BasicConsoleApp.DesignPattern._1Creational;
-using BasicConsoleApp.WrapperMaths;
+using BasicConsoleApp.ExtensionMethod1;
 
 //Console.WriteLine("Welcome to oops basic concepts");
 
@@ -38,18 +38,18 @@ class Program
         #endregion
 
         #region Extension Method
-        ////Extension Method
-        //MathThirdParty obj = new MathThirdParty();
-        //Console.WriteLine(obj.Add(20, 10));
-        //Console.WriteLine(obj.Multiply(20, 10));
-        //Console.WriteLine(obj.Subtract(20, 10)); //Extension Method
-        //Console.WriteLine(obj.Divide(20, 10)); //Extension Method
-        //obj.M1();
-        //obj.M2();
-        //obj.M3();
-        //obj.M4(); //Extension Method
-        //obj.M5("Method Name: M5"); //Extension Method
-        ////Console.WriteLine(obj.M1);
+        //Extension Method
+        MathThirdParty obj = new MathThirdParty();
+        Console.WriteLine(obj.Add(20, 10));
+        Console.WriteLine(obj.Multiply(20, 10));
+        Console.WriteLine(obj.Subtract(20, 10)); //Extension Method
+        Console.WriteLine(obj.Divide(20, 10)); //Extension Method
+        obj.M1();
+        obj.M2();
+        obj.M3();
+        obj.M4(); //Extension Method
+        obj.M5("Method Name: M5"); //Extension Method
+        //Console.WriteLine(obj.M1);
         #endregion
 
         #region Simple Singleton
