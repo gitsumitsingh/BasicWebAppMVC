@@ -3,6 +3,7 @@
 using BasicClassLibrary;
 using BasicConsoleApp.DesignPattern._1Creational;
 using BasicConsoleApp.ExtensionMethod1;
+using BasicConsoleApp.SOLIDPrincipal;
 
 //Console.WriteLine("Welcome to oops basic concepts");
 
@@ -50,6 +51,25 @@ class Program
         //obj.M4(); //Extension Method
         //obj.M5("Method Name: M5"); //Extension Method
         ////Console.WriteLine(obj.M1);
+        #endregion
+
+        #region SOLID Principle
+        ////SOLID Principle
+        //I2DShapes circle = new Circle(5);
+        //I2DShapes rectangle = new Rectangle { Length = 4, Breath = 5 };
+        //I2DShapes square = new Square { Side = 6 };
+        //I3DShapes cube = new Cube { Side = 7 };
+        //CalculateArea(circle);
+        //CalculateArea(rectangle);
+        //CalculateArea(square);
+        //CalculateArea(cube);
+        
+        //IPrinter printer = new Printer();
+        //printer.Print(circle);
+        //printer.Print(rectangle);
+        //printer.Print(square);
+        //printer.Print(cube);
+
         #endregion
 
         #region Simple Singleton
@@ -116,6 +136,17 @@ class Program
         Console.ReadKey();
     }
 
+    #region SOLID Principles
+    private static void CalculateArea(I2DShapes circle)
+    {
+        Console.WriteLine(circle.GetArea());
+    }
+    private static void CalculateArea(I3DShapes circle)
+    {
+        Console.WriteLine(circle.GetVolume());
+    }
+
+    #endregion
 
     #region SingletonThreadSafe
     private static void PrintEmployeeDetails()
@@ -138,7 +169,6 @@ class Program
         fromStudent.PrintDetails("From Student");
     }
     #endregion
-
 
     #region LazySingleton
     private static void PrintLazyEmployeeDetails()
