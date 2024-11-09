@@ -10,9 +10,9 @@
   <ItemGroup>
     <Folder Include="DesignPattern\3Behavioural\" />
     <Folder Include="DesignPattern\2Structural\" />
-    <Folder Include="Polymorphism\" />
-    <Folder Include="Inheritance\" />
-    <Folder Include="Encapsulation\" />
+    <Folder Include="OOPS\Inheritance\" />
+    <Folder Include="OOPS\Encapsulation\" />
+    <Folder Include="OOPS\Polymorphism\" />
   </ItemGroup>
 
   <ItemGroup>

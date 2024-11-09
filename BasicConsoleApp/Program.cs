@@ -38,18 +38,18 @@ class Program
         #endregion
 
         #region Extension Method
-        //Extension Method
-        MathThirdParty obj = new MathThirdParty();
-        Console.WriteLine(obj.Add(20, 10));
-        Console.WriteLine(obj.Multiply(20, 10));
-        Console.WriteLine(obj.Subtract(20, 10)); //Extension Method
-        Console.WriteLine(obj.Divide(20, 10)); //Extension Method
-        obj.M1();
-        obj.M2();
-        obj.M3();
-        obj.M4(); //Extension Method
-        obj.M5("Method Name: M5"); //Extension Method
-        //Console.WriteLine(obj.M1);
+        ////Extension Method
+        //MathThirdParty obj = new MathThirdParty();
+        //Console.WriteLine(obj.Add(20, 10));
+        //Console.WriteLine(obj.Multiply(20, 10));
+        //Console.WriteLine(obj.Subtract(20, 10)); //Extension Method
+        //Console.WriteLine(obj.Divide(20, 10)); //Extension Method
+        //obj.M1();
+        //obj.M2();
+        //obj.M3();
+        //obj.M4(); //Extension Method
+        //obj.M5("Method Name: M5"); //Extension Method
+        ////Console.WriteLine(obj.M1);
         #endregion
 
         #region Simple Singleton
@@ -72,14 +72,14 @@ class Program
         //  * Assuming SingletonWithoutSealed is created from student class
         //  * we refer to the GetInstance property from the SingletonWithoutSealed class
         //  */
-        //SingletonWithoutSealed fromStudent = SingletonWithoutSealed.GetInstance;
-        //fromStudent.PrintDetails("From Student");
+        //SingletonWithoutSealed fromStudent2 = SingletonWithoutSealed.GetInstance;
+        //fromStudent2.PrintDetails("From Student");
         ///*
         //* Assuming SingletonWithoutSealed is created from employee class
         //* we refer to the GetInstance property from the SingletonWithoutSealed class
         //*/
-        //SingletonWithoutSealed fromEmployee = SingletonWithoutSealed.GetInstance;
-        //fromEmployee.PrintDetails("From Employee");
+        //SingletonWithoutSealed fromEmployee2 = SingletonWithoutSealed.GetInstance;
+        //fromEmployee2.PrintDetails("From Employee");
 
         //Console.WriteLine("-------------------------------------");
         ///*
