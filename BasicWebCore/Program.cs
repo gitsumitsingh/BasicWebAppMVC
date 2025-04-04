@@ -1,17 +1,18 @@
-using BasicWebCore.Data;
-using BasicWebCore.Services;
+using Microsoft.EntityFrameworkCore;
+using BasicWebCore.Models.Context;
+using BasicWebCore.Models.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 
-//string strCon1 = builder.Configuration.GetConnectionString("MongoDbConnection");
-//string strCon2 = builder.Services.Configure<DbConfiguration>(builder.Configuration.GetSection("MongoDbConnection"));
+//string strCon1 = builder.Configuration.GetConnectionString("MongoConnection");
+builder.Services.AddDbContext<MongoDBContext>(opt => opt.UseInMemoryDatabase(builder.Configuration.GetSection("MongoConnection:MongoConnectionString").Value));
+
+//string strCon2 = builder.Services.Configure<DbConfiguration>(builder.Configuration.GetSection("MongoConnection"));
 //DbConfiguration mongoDbConfiguration = new DbConfiguration();
-//builder.Configuration.GetSection("MongoDbConnection").Bind(mongoDbConfiguration);
+//builder.Configuration.GetSection("MongoConnection").Bind(mongoDbConfiguration);
 //builder.Services.AddSingleton<DbConfiguration, mongoDbConfiguration>();
 builder.Services.AddScoped<IProductService, ProductService>();
 

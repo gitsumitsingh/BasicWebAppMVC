@@ -1,22 +1,20 @@
-﻿using BasicWebCore.Data;
-using BasicWebCore.IServices;
-using BasicWebCore.Models;
+﻿using BasicWebCore.Models;
 using MongoDB.Driver;
 
-namespace BasicWebCore.Services
+namespace BasicWebCore.Models.Repository
 {
 
     public class ProductService : IProductService
     {
         private readonly IMongoCollection<Product> Products;
-        private readonly DbConfiguration mongoDbConfig = new DbConfiguration();
+        private readonly ConfigSettings mongoDbConfig = new ConfigSettings();
 
         public ProductService(IConfiguration config)
         {
-            var conObj1 = config.GetSection("ConnectionStrings").Value;
+            var conObj1 = config.GetSection("MongoConnection:MongoConnectionString").Value;
             dynamic conObj2 = config.GetSection("ConnectionStrings").Value;
-            config.GetSection("MongoDbConnection").Bind(mongoDbConfig);
-            MongoClient client = new MongoClient(mongoDbConfig.ConnectionString);
+            config.GetSection("MongoConnection").Bind(mongoDbConfig);
+            MongoClient client = new MongoClient(mongoDbConfig.MongoConnectionString);
             IMongoDatabase database = client.GetDatabase(mongoDbConfig.DatabaseName);
             Products = database.GetCollection<Product>(mongoDbConfig.CollectionName);
         }

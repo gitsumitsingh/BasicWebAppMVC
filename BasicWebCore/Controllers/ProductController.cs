@@ -1,6 +1,6 @@
 ﻿using BasicWebCore.Data;
 using BasicWebCore.Models;
-using BasicWebCore.Services;
+using BasicWebCore.Models.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

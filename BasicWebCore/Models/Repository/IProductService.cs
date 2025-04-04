@@ -1,6 +1,6 @@
 ﻿using BasicWebCore.Models;
 
-namespace BasicWebCore.Services
+namespace BasicWebCore.Models.Repository
 {
     public interface IProductService
     {
